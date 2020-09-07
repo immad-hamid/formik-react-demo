@@ -38,7 +38,7 @@ const initialValues = {
   isTall: false,
   someCheckboxes: [],
   someRadio: "",
-  country: { }
+  country: { id: "3" }
 };
 
 const App: React.FC = () => {
@@ -63,8 +63,8 @@ const App: React.FC = () => {
               type="select"
               as={Select}
             >
-              <MenuItem value="1">USA</MenuItem>
-              {/* { countriesData.map(data => <MenuItem key={data.id} value={ data.id }>{ data.countryName }</MenuItem>) } */}
+              {/* <MenuItem value="1">USA</MenuItem> */}
+              { countriesData.map(data => <MenuItem key={data.id} value={ data.id }>{ data.countryName }</MenuItem>) }
             </Field>
 
             <br/>
